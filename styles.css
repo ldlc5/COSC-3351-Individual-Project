@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('img/background.png');
+    background-repeat: repeat;
+    color: #fff;
+    line-height: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+footer{
+    font-size: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #342141;
+}
+
+h1{
+    font-family: Brush Script MT, Georgia, Times, serif;
+    font-size: 60px;
+    font-weight: lighter;
+    text-shadow: 0 0 12px #ffbd43;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 5px #ffbd43;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+pre{
+    line-height: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+img{
+    max-width: 300px;
+    height: auto;
+    display: block;
+    justify-content: center;
+    box-shadow: 0 0 10px 1px #f5ddb0;
+    border-radius: 50%;
+    animation: colorShift 10s linear infinite;
+}
+
+@keyframes colorShift {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.flexbox-container{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    margin: 20px auto;
+    padding: 5px 20px;
+    max-width: 1000px;
+    box-sizing: border-box;
+    background-color: #342141b6;
+    border-radius: 10px;
+    border: 1px dashed #9281b9;
+}
+
+
+.separate{
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: 1px #9281b9 dotted;
+    border-radius: 10px;
+    box-shadow: 4px 4px #0000006e;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, #4e2a668a, #2141418a);
+    animation: colorShift 20s linear infinite;
+}
+
+button{
+    background-image: linear-gradient(to bottom, #cf721bb9, #cf541bb9);
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px outset #e27e21b9;
+    padding: 5px 10px;
+}

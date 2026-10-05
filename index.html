@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Astrology</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header align="center">
+        <h1>
+            Daily Astrology
+        </h1>
+        <nav>
+            <button type="button" id="skyButton">Sky Events</button>
+            <button type="button" id="moonButton">Moon Phase</button>
+            <button type="button" id="horoscopeButton">Horoscope</button>
+            <button type="button" id="startButton">Home</button>
+        </nav>
+    </header>
+    <main>
+        <div class="flexbox-container">
+                <section id="page" class="container">
+                <p>
+                    <h2>Welcome to Astrology Daily!</h2>
+                    This website offers...
+                    <ul>
+                        <li><b>Sky Events</b>: A place to check out major astrological events happeing within the next 60 days.</li>
+                        <li><b>Moon Phase</b>: Check all the details about tonight's moon phase.</li>
+                        <li><b>Horoscope</b>: Gives you a daily reading based on your horoscope!</li>
+                    </ul>
+                    Click on one of the links in the navigation bar to begin.
+                </p>
+            </section>
+        </div>
+        <div class="flexbox-container">
+            <section id="skyEvents" class="hidden">
+                <h2>Upcoming Sky Events</h2>
+            </section>
+        </div>
+        <div class="flexbox-container">
+            <section id="moon" class="hidden">
+                <h2>Tonight's Moon Phase</h2>
+            </section>
+        </div>
+        <div class="flexbox-container">
+            <section id="horoscope" class="hidden">
+                <h2>Daily Horoscope Reading</h2>
+                <p>Select your birthday from the menu:</p>
+                <select name="test" id="selection">
+                    <option value="">Choose here...</option>
+                    <option value="capricorn">Dec 22 - Jan 19</option>
+                    <option value="aquarius">Jan 20 - Feb 18</option>
+                    <option value="pisces">Feb 19 - Mar 20</option>
+                    <option value="aries">Mar 21 - Apr 19</option>
+                    <option value="taurus">Apr 20 - May 20</option>
+                    <option value="gemini">May 21 - Jun 20</option>
+                    <option value="cancer">Jun 21 - Jul 22</option>
+                    <option value="leo">Jul 23 - Aug 22</option>
+                    <option value="virgo">Aug 23 - Sep 22</option>
+                    <option value="libra">Sep 23 - Oct 22</option>
+                    <option value="scorpio">Oct 23 - Nov 21</option>
+                    <option value="sagittarius">Nov 22 - Dec 21</option>
+                </select>
+                <p id="results"></p>
+            </section>
+        </div>
+        <br><br>
+    </main>
+    <footer>
+        <p align="center">© 2026 Lizette De La Cruz. All rights reserved.</p>
+    </footer>
+</body>
